@@ -36,7 +36,7 @@ Hey there! I'm **Muammer**, a passionate **Flutter Developer** from the beautifu
 
 ---
 
-## 🛠️ Tech Arsenal
+## 🛠️ Tech Stack
 
 <div align="center">
 
