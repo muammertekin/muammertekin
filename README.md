@@ -31,5 +31,3 @@ Most of what I do sits on both sides of the same product: the app on someone's p
   <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=flutter%2Cdart%2Cts%2Cnestjs%2Cmongodb%2Credis%2Cpython%2Cfastapi%2Cnextjs%2Csupabase%2Cfirebase%2Cpostgres%2Cdocker%2Cgithubactions%2Clinux%2Cfigma&perline=16&theme=dark">
   <img alt="Flutter, Dart, TypeScript, NestJS, MongoDB, Redis, Python, FastAPI, Next.js, Supabase, Firebase, PostgreSQL, Docker, GitHub Actions, Linux, Figma" src="https://skillicons.dev/icons?i=flutter%2Cdart%2Cts%2Cnestjs%2Cmongodb%2Credis%2Cpython%2Cfastapi%2Cnextjs%2Csupabase%2Cfirebase%2Cpostgres%2Cdocker%2Cgithubactions%2Clinux%2Cfigma&perline=16&theme=light">
 </picture>
-
-Plus the Claude API for AI features, and Caddy, Hetzner and Cloudflare to keep it all running.
