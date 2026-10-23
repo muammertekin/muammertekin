@@ -23,8 +23,6 @@ Most of what I do sits on both sides of the same product: the app on someone's p
   <img alt="Commits, pull requests, active repositories and languages over the last 12 months" src="assets/stats-light.svg" width="100%">
 </picture>
 
-<sub>Almost all of my work is in private repositories, so this card is built from the GitHub API every night by <a href="scripts/build.mjs">a small script</a>.</sub>
-
 ### Tools I reach for
 
 <picture>
