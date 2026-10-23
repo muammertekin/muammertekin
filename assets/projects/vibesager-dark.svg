@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="240" viewBox="0 0 600 240" role="img" aria-label="Vibesager: Upload a chat screenshot and see the red and green flags, with three replies written in the vibe you pick. Built with Flutter, Supabase, Firebase, Next.js.">
+<title>Vibesager: Upload a chat screenshot and see the red and green flags, with three replies written in the vibe you pick. Built with Flutter, Supabase, Firebase, Next.js.</title>
+<style>
+  .sans{font-family:ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif} .mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+  .rise{animation:rise .8s cubic-bezier(.2,.75,.2,1) backwards}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}}
+  
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<defs>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="11" cy="11" r="1.1" fill="#ffffff" fill-opacity="0.09"/>
+  </pattern>
+  <radialGradient id="fade" cx="50%" cy="38%" r="65%">
+    <stop offset="35%" stop-color="#fff"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <mask id="dotmask"><rect width="100%" height="100%" fill="url(#fade)"/></mask>
+  <radialGradient id="halo" cx="50%" cy="0%" r="60%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="card"><rect width="600" height="240" rx="24"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+  <rect width="600" height="240" fill="#0a0a0c"/>
+  <rect width="600" height="240" fill="url(#halo)"/>
+  <rect width="600" height="240" fill="url(#dots)" mask="url(#dotmask)"/>
+</g>
+<rect x=".5" y=".5" width="599" height="239" rx="23.5" fill="none" stroke="#24252b"/>
+
+<g class="rise">
+  <text x="40" y="52" class="mono" font-size="12" letter-spacing="1.8" fill="#ffb547">AI · CHAT ANALYSIS</text>
+  <text x="560" y="52" text-anchor="end" class="mono" font-size="12" fill="#7d808a">ios · android · web</text>
+  <text x="38" y="100" class="sans" font-size="36" font-weight="600" letter-spacing="-.9" fill="#f3f3f5">Vibesager</text>
+  <text x="40" y="136" class="sans" font-size="17" fill="#b1b3bb">Upload a chat screenshot and see the red and green flags,</text>
+  <text x="40" y="160" class="sans" font-size="17" fill="#b1b3bb">with three replies written in the vibe you pick.</text>
+</g>
+<g class="rise" style="animation-delay:.15s">
+  <rect x="40" y="184" width="79.3" height="28" rx="14" fill="#1b1c21" stroke="#24252b"/>
+  <text x="79.7" y="202.5" text-anchor="middle" class="mono" font-size="13" fill="#b1b3bb">Flutter</text>
+  <rect x="127.30000000000001" y="184" width="87.2" height="28" rx="14" fill="#1b1c21" stroke="#24252b"/>
+  <text x="170.9" y="202.5" text-anchor="middle" class="mono" font-size="13" fill="#b1b3bb">Supabase</text>
+  <rect x="222.5" y="184" width="87.2" height="28" rx="14" fill="#1b1c21" stroke="#24252b"/>
+  <text x="266.1" y="202.5" text-anchor="middle" class="mono" font-size="13" fill="#b1b3bb">Firebase</text>
+  <rect x="317.7" y="184" width="79.3" height="28" rx="14" fill="#1b1c21" stroke="#24252b"/>
+  <text x="357.4" y="202.5" text-anchor="middle" class="mono" font-size="13" fill="#b1b3bb">Next.js</text>
+</g>
+</svg>

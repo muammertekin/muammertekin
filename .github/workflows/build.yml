@@ -1,0 +1,38 @@
+name: Build profile
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/**, .github/workflows/build.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-profile
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # PROFILE_TOKEN: a fine-grained token with read-only "Contents" and "Metadata" on
+      # all repositories, so the stats include private work.
+      - run: node scripts/build.mjs
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+      - name: Commit changed assets
+        run: |
+          git add assets
+          git diff --cached --quiet && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update profile stats'
+          git push
